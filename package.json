@@ -1,0 +1,27 @@
+{
+    "name": "e61.carbon",
+    "version": "0.0.1",
+    "description": "E61 - Carbon",
+    "keywords": [
+        "javascrip",
+        "framework"
+    ],
+    "private": true,
+    "author": {
+        "name": "Ciro Cesar Maciel",
+        "email": "ciro.maciel@c37.co"
+    },
+    "directories": {
+        "dist": "./dist",
+        "doc": "./doc",
+        "src": "./src"
+    },
+    "dependencies": {
+        "serve-me": "latest"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "preinstall": "",
+        "start": ""
+    }
+}

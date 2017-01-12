@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="SHORTCUT ICON" href="img/favicon.ico" />
+    <title>C37 - JS - Framework</title>
+    <script type="text/javascript" src="js/v09.js.framework.js"></script>
+    <!--<script type="text/javascript" src="js/third.js"></script>-->
+    <script>
+        window.onload = function () {
+
+            var second = require("second");
+            var utility = require("utility");
+
+            second.makeTest();
+
+            console.log(utility.uuid())
+
+
+            // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+            // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes
+
+            var Poligono = class {
+                constructor(altura, largura) {
+                    this.altura = altura;
+                    this.largura = largura;
+                }
+            };
+
+            console.log(Poligono);
+
+            class Ponto {
+                constructor(x, y) {
+                    this.x = x;
+                    this.y = y;
+                }
+
+                static distancia(a, b) {
+                    const dx = a.x - b.x;
+                    const dy = a.y - b.y;
+
+                    return Math.sqrt(dx * dx + dy * dy);
+                }
+            }
+
+            const p1 = new Ponto(5, 5);
+            const p2 = new Ponto(10, 10);
+
+            console.log(Ponto.distancia(p1, p2));
+
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
